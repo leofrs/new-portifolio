@@ -6,7 +6,7 @@ type ModalProps = {
   data: {
     title: string;
     description: string;
-    tags: string;
+    tags: string[];
     github: string;
     webapp: string;
   };

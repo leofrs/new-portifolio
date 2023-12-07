@@ -18,7 +18,13 @@ import { useState } from "react";
 
 const HeroContent = () => {
   const [isModalOpen, setModalOpen] = useState(false);
-  const [modalData, setModalData] = useState({
+  const [modalData, setModalData] = useState<{
+    title: string;
+    description: string;
+    tags: string[];
+    github: string;
+    webapp: string;
+  }>({
     title: "",
     description: "",
     tags: [],
