@@ -58,13 +58,17 @@ const HeroContent = () => {
             variants={slideInFromLeft(0.5)}
             className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
           >
-            <span>
+            <h2>
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 pb-5">
+                {" "}
+                Leonardo Rodrigues
+              </p>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
                 Full Stack{" "}
               </span>
               Developer
-            </span>
+            </h2>
           </motion.div>
 
           <motion.p
@@ -96,13 +100,13 @@ const HeroContent = () => {
           className="w-full h-screen flex justify-center items-center"
         >
           <div
-            className="flex flex-col items-center justify-center "
+            className="flex flex-col items-center justify-center max-lg:mt-80 "
             id="projects"
           >
-            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20 max-lg:my-80 flex-wrap">
+            <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-10 flex-wrap">
               Ultimos projetos
             </h1>
-            <div className="h-screen w-full flex justify-center items-center gap-10 px-10 max-lg:flex-col max-lg:gap-48 ">
+            <div className="h-full w-full flex justify-center items-center gap-10 px-10 max-lg:flex-col max-lg:gap-48 ">
               {projects.map((item) => {
                 return (
                   <div
